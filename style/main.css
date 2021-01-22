@@ -1,4 +1,42 @@
-body{
-    background-color: rgb(161, 44, 44);
+:root{
+    --vermelho:#e50915;
+    --preta:#141414;
+    --cinza:#AAA;
 }
 
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 20px;
+}
+
+header nav a:hover{
+    color: white;/*Cor da letra de cada link, fica branco*/
+    transition: 0.25s ;/*Aplica uma transição suave ao ser passado o mouse em cima do link*/
+}
+
+header .logo{
+    font-size: 40px;
+    font-family: "Arial Black";
+    color: var(--vermelho);
+}
+
+/*Faz referência a toda estrutura html, todos os elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* Os elementos de dentro da caixa não ultrapassam o limite definido*/
+}
+
+header .container{
+    display: flex;/*Joga todos os elementos da classe em linha*/
+    align-items: center;
+    flex-direction: row; /*Valor padrão do atributo (linha)*/
+    justify-content: space-between;
+    margin: 20px;
+}
