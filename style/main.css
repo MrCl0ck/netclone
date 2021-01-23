@@ -17,6 +17,10 @@ header nav a {
     margin-right: 20px;
 }
 
+header nav {
+    margin-top: 15px;
+}
+
 main{
     background-image: url("./img/ponto_cego_fundo.jpg");
 }
@@ -51,7 +55,7 @@ header .container{
 .filme-principal {
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)),url('/img/ponto_cego_fundo.jpg');
-    height: 400px; /*Tamanho total da caixa*/
+    height: 500px; /*Tamanho total da caixa*/
     background-size: cover; /*Define que o background irá cobrir o tamanho da caixa*/
     display: flex; /*Objetos em forma flex, lado a lado a depender da direção*/
     flex-direction: column; /* Objetos alinhados em coluna*/
@@ -66,12 +70,12 @@ header .container{
 }
 
 .titulo {
-    margin-top: 15%;
-    font-size: 70px;
+    margin-top: 10%;
+    font-size: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.botoes button{
+.botao button{
     background-color: rgba(0,0,0,.50);
     color: white;
     margin-right: 15px;
@@ -81,7 +85,7 @@ header .container{
     border: none;/*Tira a formatação básica dos botões, aquele sombreamento cinzado*/
 }
 
-.botoes button:hover{
+.botao button:hover{
     color: black;
     background-color: white;
     cursor: pointer;
@@ -94,7 +98,7 @@ header .container{
 }
 
 .container{
-    margin-left: 3%;
+    margin-left: 20px;
 }
 
 main .filme-principal .container {
@@ -106,6 +110,9 @@ main .filme-principal .container {
     height: 100%;
     width: 100%;
     display: block;
+}
+.carrosel-filmes{
+    margin-top: 0px;
 }
 /*
 WRAPPER - Envelopar, envelope...
