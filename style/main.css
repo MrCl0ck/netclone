@@ -60,23 +60,33 @@ header .container{
 }
 
 .filme-principal .descricao {
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 .titulo {
+    margin-top: 15%;
     font-size: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .botoes button{
-    height: 30px;
-    width: 150px;
-    border-radius: 5px;
-    border: 1px none white;/*Tira a formatação básica dos botões, aquele sombreamento cinzado*/
-}
-.botoes button:hover{
+    background-color: rgba(0,0,0,.50);
     color: white;
-    background-color: black;
+    margin-right: 15px;
+    font-size: 12px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;/*Tira a formatação básica dos botões, aquele sombreamento cinzado*/
+}
+
+.botoes button:hover{
+    color: black;
+    background-color: white;
     cursor: pointer;
-    transition: 0.15s;
-    border-style: none;
+    transition: 0.3s ease-in-out all;
+}
+
+.botao i {
+    margin-right: 8px;
 }
