@@ -7,17 +7,23 @@
 body{
     background-color: var(--preta);
     font-family: 'Times New Roman', Times, serif;
+    color: white;
 }
 
+/*Elementos link dentro do nav-bar (nav)*/
 header nav a {
     text-decoration: none;
     color: var(--cinza);
     margin-right: 20px;
 }
 
+main{
+    background-image: url("./img/ponto_cego_fundo.jpg");
+}
+
 header nav a:hover{
     color: white;/*Cor da letra de cada link, fica branco*/
-    transition: 0.25s ;/*Aplica uma transição suave ao ser passado o mouse em cima do link*/
+    transition: 0.15s ;/*Aplica uma transição suave ao ser passado o mouse em cima do link*/
 }
 
 header .logo{
@@ -39,4 +45,38 @@ header .container{
     flex-direction: row; /*Valor padrão do atributo (linha)*/
     justify-content: space-between;
     margin: 20px;
+}
+
+/*CLASSE FILME PRINCIPAL*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)),url('/img/ponto_cego_fundo.jpg');
+    height: 400px; /*Tamanho total da caixa*/
+    background-size: cover; /*Define que o background irá cobrir o tamanho da caixa*/
+    display: flex; /*Objetos em forma flex, lado a lado a depender da direção*/
+    flex-direction: column; /* Objetos alinhados em coluna*/
+    justify-content: center;/*Segue a direção do flex-direction, se o flex-direction estiver em colunas, ele vai alinhar pela vertical, caso estiver linha, vai alinhar na horizontal*/
+    align-items: flex-start; /*Os elementos são exibidos na horizontal no início, pois é onde começa a margem*/
+}
+
+.filme-principal .descricao {
+    margin-bottom: 25px;
+}
+
+.titulo {
+    font-size: 90px;
+}
+
+.botoes button{
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px none white;/*Tira a formatação básica dos botões, aquele sombreamento cinzado*/
+}
+.botoes button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.15s;
+    border-style: none;
 }
