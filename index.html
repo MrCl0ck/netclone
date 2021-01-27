@@ -32,12 +32,12 @@
     <!--CONTEÚDO PRINCIPAL-->
     <main>
         <div class="filme-principal">
-            <div class="container">
+            <div class="container trailer-principal">
                 <h3 class="titulo">PONTO CEGO</h3>
                 <p class="descricao">Misteriosa mulher é encontrada na Times Square, sem quaisquer lembranças de quem ela é e de como chegou ali. As únicas pistas que ela possui são as tatuagens que cobrem todo o seu corpo. Um agente do FBI passa a ajudá-la enquanto buscam a verdade.</p>
                 <div class="botao">
                     <!--O atributo role, significa que vai dizer para o sistema em uso que aquele elemento é um button. p.s: alguns sistemas não reconhecem que a tag button quer dizer um button -->
-                    <button role="button" class="botao">
+                    <button id="assistir-agora" onmouseout="video_out('.trailer-principal')" onmouseover="video_in('.filme-principal', 'ponto_cego')" role="button" class="botao">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
@@ -48,39 +48,41 @@
                 </div>
             </div>
         </div>        
+        
     </main>
     <!--FIM DO CONTEÚDO PRINCIPAL-->
+    
 
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'mulher_maravilha')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini1.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'bad_boys_para_sempre')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini2.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'violação')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini3.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'ava')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini4.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'o_ceu_da_meia_noite')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini5.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'skylines')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini6.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'coringa')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini7.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'agentes_vanguard')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini8.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" onmouseover="video_in('.filme-principal', 'os_croods')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini9.jpg" alt="" srcset=""/>
             </div>
-            <div class="item">
+            <div class="item" value="" onmouseover="video_in('.filme-principal', 'soul')" onmouseout="video_out('.trailer-principal')">
                 <img class="box-filme" src="img/mini10.jpg" alt="" srcset=""/>
             </div>
         </div>

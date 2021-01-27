@@ -53,7 +53,8 @@ header .container{
 
 /*CLASSE FILME PRINCIPAL*/
 .filme-principal {
-    font-size: 16px;
+    font-size: 20px;
+    
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)),url('/img/ponto_cego_fundo.jpg');
     height: 500px; /*Tamanho total da caixa*/
     background-size: cover; /*Define que o background irá cobrir o tamanho da caixa*/
@@ -101,7 +102,7 @@ header .container{
     margin-left: 20px;
 }
 
-main .filme-principal .container {
+main .filme-principal .container{
     width: 70%;
 }
 
@@ -114,6 +115,20 @@ main .filme-principal .container {
 .carrosel-filmes{
     margin-top: 0px;
 }
+
+.video {    
+    position: absolute;
+    margin-left: 50%;
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+    padding: 1px;
+    border: 1px solid var(--vermelho);
+}   
+
+.video.show{
+    opacity: 100%; 
+}
+
 /*
 WRAPPER - Envelopar, envelope...
 
